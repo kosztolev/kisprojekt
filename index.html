@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Regisztráció</title>
+</head>
+
+<body>
+
+    <h1>Regisztráció</h1>
+
+    <form action="feldolgoz.php" method="post">
+
+        <label>Név:</label>
+        <input type="text" name="nev">
+        <br><br>
+
+        <label>Login név:</label>
+        <input type="text" name="loginnev">
+        <br><br>
+
+        <label>Jelszó:</label>
+        <input type="password" name="jelszo">
+        <br><br>
+
+        <label>Szerepkör:</label>
+        <select name="szerepkor">
+            <option value="felhasznalo">Felhasználó</option>
+            <option value="admin">Admin</option>
+            <option value="karbantarto">Karbantartó</option>
+        </select>
+
+        <br><br>
+
+        <label>Autó:</label>
+
+        <input type="radio" name="auto" value="1">
+        <label>Van</label>
+
+        <input type="radio" name="auto" value="0">
+        <label>Nincs</label>
+
+        <br><br>
+
+        <label>PC:</label>
+
+        <input type="radio" name="pc" value="1">
+        <label>Van</label>
+
+        <input type="radio" name="pc" value="0">
+        <label>Nincs</label>
+
+        <br><br>
+
+        <label>Mobil:</label>
+        <input type="text" name="mobil">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="text" name="email">
+
+        <br><br>
+
+        <button type="submit">Küldés</button>
+        <button type="reset">Mégsem</button>
+
+    </form>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
